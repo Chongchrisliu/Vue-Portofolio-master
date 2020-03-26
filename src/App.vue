@@ -2,8 +2,9 @@
   <div id="app">
     <app-nav-bar></app-nav-bar>
     <app-banner></app-banner>
-    <app-qualities></app-qualities>
-    <app-contact></app-contact>
+    <app-About></app-About>
+    <!-- <app-qualities></app-qualities> -->
+    <app-Resume></app-Resume>
     <app-projects></app-projects>
     <app-social></app-social>
     <app-footer></app-footer>
@@ -13,19 +14,20 @@
 <script>
 import Banner from './components/Banner.vue'
 import Qualities from './components/Qualities.vue'
-import Contact from './components/Contact.vue'
+import Resume from './components/Resume.vue'
 import Projects from './components/Projects.vue'
 import Social from './components/Social.vue'
 import Footer from './components/Footer.vue'
 import NavBar from './components/NavBar.vue'
-
+import About from './components/About.vue'
 
 export default {
   name: 'App',
   components: {
     appBanner: Banner,
+    appAbout: About,
     appQualities: Qualities,
-    appContact: Contact,
+    appResume: Resume,
     appProjects: Projects,
     appSocial: Social,
     appFooter: Footer,
@@ -64,9 +66,9 @@ h1, h2, h3, h4, h5 {
 }
 
 #banner,
-#contact,
+#resume,
 #social {
-  background: linear-gradient(rgba(129, 69, 19, 0.6), rgba(129, 69, 19, 0.6)), url('./assets/img/portret.jpg');
+  background: url('https://images.pexels.com/photos/234527/pexels-photo-234527.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

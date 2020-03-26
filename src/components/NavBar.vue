@@ -1,6 +1,6 @@
 <template>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark p-3 fixed-top">
-        <a href="#" class="navbar-brand text-uppercase">Portofolio of Chong Chris Liu</a>
+        <a href="#" class="navbar-brand text-uppercase">Chong Chris Liu</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarBrand">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -15,11 +15,13 @@
 export default {
     data () {
         return {
-            items: [{id: '#banner', title: 'Home' },
-                    {id: '#qualities', title: 'Qualities' },
-                    {id: '#contact', title: 'Contact' },
-                    {id: '#projects', title: 'Projects' },
-                    {id: '#social', title: 'social'}]
+            items: [
+                {id: '#banner', title: 'Home' },
+                {id: '#about', title: 'About' },
+                {id: '#resume', title: 'Resume' },
+                {id: '#projects', title: 'Works' },
+                {id: '#social', title: 'Contact'}
+            ]
         }
     }
 }
