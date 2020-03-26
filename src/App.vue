@@ -17,7 +17,7 @@ import Contact from './components/Contact.vue'
 import Projects from './components/Projects.vue'
 import Social from './components/Social.vue'
 import Footer from './components/Footer.vue'
-import NavBar from './components/Navbar.vue'
+import NavBar from './components/NavBar.vue'
 
 
 export default {
