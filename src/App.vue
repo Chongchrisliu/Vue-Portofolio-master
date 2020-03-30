@@ -68,9 +68,10 @@ h1, h2, h3, h4, h5 {
 #banner,
 #resume,
 #social {
-  background: url('https://images.pexels.com/photos/234527/pexels-photo-234527.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background: url('https://cdn.pixabay.com/photo/2017/08/07/09/00/theatre-2601686_1280.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 </style>

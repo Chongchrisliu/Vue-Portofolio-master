@@ -3,6 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import Element from 'element-ui'
+import Vuetify from 'vuetify'
+
+Vue.use(Vuetify)
 Vue.use(Element)
 
 Vue.config.productionTip = false
