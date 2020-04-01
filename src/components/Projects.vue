@@ -1,37 +1,36 @@
 <template>
-    <section id="projects" class="bg-light padding-bg">
+    <section id="projects" class="padding-bg">
         <div class="container">
-            <div class="row">
-                <div v-for="(item, index) in items" :key="index" class="mb-3 col-lg-4 col-6 col-xs-12">
-                    <div><img :src="item.image" :alt="item.name" class="img-fluid rounded" ></div>
-                    <hr>
+            <div class="text-center h5"><span >CHECK OUT SOME OF MY WORKS</span> <i class="fas fa-tasks"></i> </div> 
+            <div class="row mt-4">
+                <div v-for="(item, index) in items" :key="index" class="mt-5">
+                    <div class="row">
+                        <div  class="mb-3 col-md-4 col-12"><img  :src="item.image1" :alt="item.name" class="img-fluid rounded" ></div>
+                        <div  class="mb-3 col-md-4 col-12"><img  :src="item.image2" :alt="item.name" class="img-fluid rounded" ></div>
+                        <div  class="mb-3 col-md-4 col-12"><img  :src="item.image3" :alt="item.name" class="img-fluid rounded" ></div>
+                    </div>
                     <div class="mt-3">
-                        <h3>{{item.name}}</h3>
-                        <div class="text-secondary mt-3">
+                        <div class="h3">{{item.name}}</div>
+                        <div class="text-secondary mt-3" style="font: italic 1em Georgia, serif;">
+                            {{item.company}}      
+                            {{item.job}}  
+                        </div>  
+                        <div class="mt-3" type="button" data-toggle="collapse" :data-target="item.target" aria-expanded="false"> 
                             <span>
-                                {{item.job}}
-                            </span> 
-                            <span class="float-right">
-                                {{item.company}}
-                            </span>       
-                        </div>
-                        <div class="mt-2"> 
-                            <span class="font-italic">
                                 {{item.skills}}
-                                
                             </span>    
-                            <span class="float-right">
-                                <i class="fas fa-angle-down" type="button" data-toggle="collapse" :data-target="item.target" aria-expanded="false"></i>
-                                
-                            </span>     
+                            <i class="fas fa-chevron-circle-down text-primary float-right" style="font-size:20px;" ></i>     
                         </div>
-                       
-                        <div class="collapse" :id="item.targetid">
-                            <div class="text-secondary">
-                                {{item.jobdescription}}
-                            </div>
-                        </div>
-                    </div>  
+                    </div>
+                        
+                    <div class="collapse" :id="item.targetid" >
+                        <div class="card-body card card-bg">
+                            {{item.jobdescription}}
+                        </div>     
+                    </div>
+                    <div class="mt-4">
+                        <hr>
+                    </div>
                 </div>
             </div>
         </div>
@@ -47,34 +46,40 @@ export default {
         return {
             items: [
                 {
-                    image: image1, 
+                    image1: image1, 
+                    image2: image2, 
+                    image3: image3, 
                     name: 'Dating Website', 
-                    job: "Front-end Developer",
+                    job: "Front-end Developer.",
                     company: "Somoplay.",
-                    skills: "Vue, JavaScript, HTML/CSS, Element-UI",
+                    skills: "Vue, JavaScript, HTML/CSS, Sass, Element-UI, Bootstrap.",
                     target: "#projectone",
                     targetid: "projectone",
                     jobdescription: "haaaaaaaaaaaaa"
                 },
                 {
-                    image: image2, 
-                    name: 'Project 2', 
-                    job: "Full-Stack Developer",
+                    image1: image1, 
+                    image2: image2, 
+                    image3: image3, 
+                    name: 'Dating Website', 
+                    job: "Front-end Developer.",
                     company: "Somoplay.",
-                    skills: "Vue",
+                    skills: "Vue, JavaScript, HTML/CSS, Element-UI.",
                     target: "#projecttwo",
                     targetid: "projecttwo",
-                    jobdescription: "haaaaaaaaaaaab"
+                    jobdescription: "haaaaaaaaaaaaa"
                 },
                 {
-                    image: image3, 
-                    name: 'Project 3', 
-                    job: "front-end",
+                    image1: image1, 
+                    image2: image2, 
+                    image3: image3, 
+                    name: 'Dating Website', 
+                    job: "Front-end Developer.",
                     company: "Somoplay.",
-                    skills: "Vue",
+                    skills: "Vue, JavaScript, HTML/CSS, Element-UI.",
                     target: "#projectthree",
                     targetid: "projectthree",
-                    jobdescription: "haaaaaaaaaaaac"
+                    jobdescription: "haaaaaaaaaaaaa"
                 },
             ]
         }
@@ -86,5 +91,9 @@ export default {
     .padding-bg{
         padding-top: 80px;
         padding-bottom: 80px;
+        letter-spacing: 0.03em;
+    }
+    .card-bg{
+        background-color:transparent;
     }
 </style>

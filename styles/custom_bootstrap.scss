@@ -1,5 +1,6 @@
 // Import custom font from Google
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Allerta');
 
 // Override / set color variables
 $white: #fff;
@@ -51,6 +52,7 @@ $badge-padding-y: 0.4em;
 $badge-font-weight: normal;
 
 // Override fonts
+$font-family-description: 'Allerta','Roboto', sans-serif;
 $font-family-sans-serif: 'Roboto', sans-serif;
 $font-family-serif: Georgia, 'Times New Roman', Times, serif;
 $font-family-monospace: Menlo, Monaco, Consolas, 'Liberation Mono',

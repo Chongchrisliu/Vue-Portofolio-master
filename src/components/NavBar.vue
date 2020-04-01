@@ -9,6 +9,7 @@
                 <li  v-for="(item, index) in items" :key="index" class="nav-item" ><a :href="item.id" class="nav-link text-uppercase">{{item.title}}</a></li>
             </ul>
         </div>
+        
     </nav>
 </template>
 <script>
