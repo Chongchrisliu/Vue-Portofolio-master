@@ -13,7 +13,7 @@
     "bootstrap": "^4.4.1",
     "element-ui": "^2.13.0",
     "vue": "^2.5.2",
-    "vuetify": "^2.2.19"
+    "vuetify": "^2.6.10"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
